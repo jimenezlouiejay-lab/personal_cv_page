@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Personal CV</title>
+    <title>Personal CV | Louie Jay</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- NAVIGATION -->
     <header>
         <nav class="navbar">
 
-            <h2 class="logo">My CV</h2>
+            <a href="#home" class="logo">My<span>CV</span></a>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -31,109 +32,254 @@
 
     <main>
 
+        <!-- HERO -->
         <section id="home" class="hero">
 
             <div class="hero-content">
 
-                <p class="hello">Hello, I'm</p>
+                <div class="hero-text">
 
-                <h1>Your Name</h1>
+                    <p class="intro">HELLO, I'M</p>
 
-                <h2>BS Information Technology Student</h2>
+                    <h1> <span>Louie Jay Y. Jimenez</span></h1>
 
-                <p class="description">
-                    I am an Information Technology student interested in
-                    technology, web development, and continuously improving
-                    my technical skills.
-                </p>
+                    <h2>BS Information Technology Student</h2>
 
-                <a href="#about" class="button">
-                    View My CV
-                </a>
+                    <p class="hero-description">
+                        An Information Technology student interested in
+                        web development, technology, editing videos/photos and learning new skills
+                        that can help me grow in the IT field.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#about" class="primary-btn">
+                            Explore My CV
+                        </a>
+
+                        <a href="#contact" class="secondary-btn">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROFILE PHOTO -->
+                <div class="hero-image">
+
+                    <div class="image-wrapper">
+
+                        <img src="PFP.jpg" alt="Profile Picture">
+
+                    </div>
+
+                </div>
 
             </div>
 
         </section>
 
 
+        <!-- ABOUT -->
         <section id="about" class="section">
 
-            <h2>About Me</h2>
+            <div class="section-title">
+                <p>GET TO KNOW ME</p>
+                <h2>About Me</h2>
+            </div>
 
-            <div class="card">
+            <div class="about-card">
 
                 <p>
                     I am currently studying Bachelor of Science in
                     Information Technology. I enjoy learning about computers,
-                    web development, software, and other areas related to
+                    web development, software, editing both video and photo and other areas related to
                     information technology.
                 </p>
 
+                <p>
+                    I am continuously developing my technical and personal
+                    skills while gaining experience through academic
+                    activities and projects.
+                </p>
+
             </div>
 
         </section>
 
 
+        <!-- EDUCATION -->
         <section id="education" class="section">
 
-            <h2>Education</h2>
+    <div class="section-title">
+        <p>MY BACKGROUND</p>
+        <h2>Education</h2>
+    </div>
 
-            <div class="card">
+    <div class="education-card">
 
+        <!-- COLLEGE -->
+        <div class="education-item">
+
+            <div class="education-icon">🎓</div>
+
+            <div class="education-info">
                 <h3>Bachelor of Science in Information Technology</h3>
 
-                <p>Davao del Norte State College</p>
+                <p class="school">
+                    Davao del Norte State College
+                </p>
 
-                <p>4th Year Student</p>
-
+                <p class="year">
+                    4th Year • Undergraduate
+                </p>
             </div>
 
-        </section>
+        </div>
 
 
+        <!-- SENIOR HIGH SCHOOL -->
+        <div class="education-item">
+
+            <div class="education-icon">🎓</div>
+
+            <div class="education-info">
+                <h3>General Academic Strand</h3>
+
+                <p class="school">
+                    San Miguel National High School
+                </p>
+
+                <p class="year">
+                    Grade 12 • Graduate
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- ELEMENTARY -->
+        <div class="education-item">
+
+            <div class="education-icon">🎓</div>
+
+            <div class="education-info">
+                <h3>Elementary Education</h3>
+
+                <p class="school">
+                    San Miguel Elementary School
+                </p>
+
+                <p class="year">
+                    Grade 6 • Graduate
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- SKILLS -->
         <section id="skills" class="section">
 
-            <h2>Skills</h2>
+            <div class="section-title">
+                <p>WHAT I KNOW</p>
+                <h2>Skills</h2>
+            </div>
 
-            <div class="skills-container">
 
-                <div class="skill">HTML</div>
+            <div class="skills-grid">
 
-                <div class="skill">CSS</div>
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Creating structured webpages.</p>
+                </div>
 
-                <div class="skill">JavaScript</div>
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Designing responsive web interfaces.</p>
+                </div>
 
-                <div class="skill">Git</div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Adding basic website interactions.</p>
+                </div>
 
-                <div class="skill">GitHub</div>
+                <div class="skill-card">
+                    <h3>Git</h3>
+                    <p>Tracking project changes.</p>
+                </div>
 
-                <div class="skill">Web Development</div>
+                <div class="skill-card">
+                    <h3>GitHub</h3>
+                    <p>Managing and publishing repositories.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>Building simple responsive websites.</p>
+                </div>
+
+                 <div class="skill-card">
+                    <h3>Video/Photo Editing</h3>
+                    <p>Editing Videos/Photos alike.</p>
+                </div>
 
             </div>
 
         </section>
 
 
+        <!-- CONTACT -->
         <section id="contact" class="section">
 
-            <h2>Contact</h2>
+            <div class="section-title">
+                <p>GET IN TOUCH</p>
+                <h2>Contact Me</h2>
+            </div>
 
-            <div class="card">
 
-                <p>
-                    <strong>Email:</strong>
-                    your-email@example.com
-                </p>
+            <div class="contact-card">
 
-                <p>
-                    <strong>GitHub:</strong>
-                    github.com/yourusername
-                </p>
+                <div class="contact-item">
 
-                <p>
-                    <strong>Location:</strong>
-                    Davao del Norte, Philippines
-                </p>
+                    <span>✉</span>
+
+                    <div>
+                        <small>Email</small>
+                        <p>jimenez.louiejay@dnsc.edu.ph</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>⌘</span>
+
+                    <div>
+                        <small>GitHub</small>
+                        <p>https://github.com/jimenezlouiejay-lab</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>⌖</span>
+
+                    <div>
+                        <small>Location</small>
+                        <p>Davao del Norte, Philippines</p>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -142,10 +288,15 @@
     </main>
 
 
+    <!-- FOOTER -->
     <footer>
 
         <p>
-            © <span id="year"></span> Your Name
+            © <span id="year"></span> Louie Jay
+        </p>
+
+        <p class="footer-text">
+            Personal CV Website
         </p>
 
     </footer>

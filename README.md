@@ -6,7 +6,7 @@ The website presents my professional profile, education, technical and professio
 
 ## Live Website
 
-**Vercel:** Add the final Vercel URL here after deployment.
+**Vercel:** https://personalcvpage-bay.vercel.app/
 
 ## GitHub Repository
 

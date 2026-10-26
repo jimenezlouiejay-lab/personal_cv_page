@@ -1,309 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Personal CV | Louie Jay</title>
-
+    <meta name="description" content="Personal CV and portfolio of Louie Jay Y. Jimenez, a BS Information Technology student focused on web development, software systems, and technology projects.">
+    <meta name="theme-color" content="#07090d">
+    <title>Louie Jay Y. Jimenez | Personal CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="page-loader" id="pageLoader" aria-hidden="true">
+        <div class="loader-mark">LJ<span>.</span></div>
+    </div>
 
-    <!-- NAVIGATION -->
-    <header>
-        <nav class="navbar">
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
 
-            <a href="#home" class="logo">My<span>CV</span></a>
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Louie Jay home">
+                <span class="brand-mark">LJ</span><span class="brand-dot">.</span>
+            </a>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link active" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#education">Education</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#experience">Experience</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
-
         </nav>
     </header>
 
-
     <main>
-
-        <!-- HERO -->
-        <section id="home" class="hero">
-
-            <div class="hero-content">
-
-                <div class="hero-text">
-
-                    <p class="intro">HELLO, I'M</p>
-
-                    <h1> <span>Louie Jay Y. Jimenez</span></h1>
-
-                    <h2>BS Information Technology Student</h2>
-
+        <section class="hero" id="home">
+            <div class="hero-grid container">
+                <div class="hero-copy reveal">
+                    <div class="eyebrow"><span class="eyebrow-line"></span> BSIT 4th Year • Davao del Norte</div>
+                    <h1>Louie Jay Y.<br><span>Jimenez</span></h1>
+                    <p class="hero-role">Information Technology Student <span>•</span> Aspiring Web Developer</p>
                     <p class="hero-description">
-                        An Information Technology student interested in
-                        web development, technology, editing videos/photos and learning new skills
-                        that can help me grow in the IT field.
+                        I build practical digital experiences while strengthening my skills in web development, software systems, Git workflows, documentation, and collaborative IT projects.
                     </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="#about" class="primary-btn">
-                            Explore My CV
-                        </a>
-
-                        <a href="#contact" class="secondary-btn">
-                            Contact Me
-                        </a>
-
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Explore Projects <span aria-hidden="true">↗</span></a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
                     </div>
-
-                </div>
-
-
-                <!-- PROFILE PHOTO -->
-                <div class="hero-image">
-
-                    <div class="image-wrapper">
-
-                        <img src="PFP.jpg" alt="Profile Picture">
-
+                    <div class="hero-links" aria-label="Professional links">
+                        <a href="https://github.com/jimenezlouiejay-lab" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                        <a href="mailto:jimenez.louiejay@dnsc.edu.ph">Email <span>↗</span></a>
                     </div>
-
                 </div>
 
+                <div class="hero-visual reveal">
+                    <div class="portrait-shell">
+                        <div class="portrait-frame">
+                            <img src="PFP.jpg" alt="Professional portrait of Louie Jay Y. Jimenez">
+                        </div>
+                        <div class="portrait-badge badge-top">BSIT</div>
+                        <div class="portrait-badge badge-bottom"><span></span> Building & learning</div>
+                    </div>
+                </div>
             </div>
 
+            <div class="hero-scroll" aria-hidden="true">
+                <span>SCROLL</span><span class="scroll-line"></span>
+            </div>
         </section>
 
-
-        <!-- ABOUT -->
-        <section id="about" class="section">
-
-            <div class="section-title">
-                <p>GET TO KNOW ME</p>
-                <h2>About Me</h2>
-            </div>
-
-            <div class="about-card">
-
-                <p>
-                    I am currently studying Bachelor of Science in
-                    Information Technology. I enjoy learning about computers,
-                    web development, software, editing both video and photo and other areas related to
-                    information technology.
-                </p>
-
-                <p>
-                    I am continuously developing my technical and personal
-                    skills while gaining experience through academic
-                    activities and projects.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- EDUCATION -->
-        <section id="education" class="section">
-
-    <div class="section-title">
-        <p>MY BACKGROUND</p>
-        <h2>Education</h2>
-    </div>
-
-    <div class="education-card">
-
-        <!-- COLLEGE -->
-        <div class="education-item">
-
-            <div class="education-icon">🎓</div>
-
-            <div class="education-info">
-                <h3>Bachelor of Science in Information Technology</h3>
-
-                <p class="school">
-                    Davao del Norte State College
-                </p>
-
-                <p class="year">
-                    4th Year • Undergraduate
-                </p>
-            </div>
-
-        </div>
-
-
-        <!-- SENIOR HIGH SCHOOL -->
-        <div class="education-item">
-
-            <div class="education-icon">🎓</div>
-
-            <div class="education-info">
-                <h3>General Academic Strand</h3>
-
-                <p class="school">
-                    San Miguel National High School
-                </p>
-
-                <p class="year">
-                    Grade 12 • Graduate
-                </p>
-            </div>
-
-        </div>
-
-
-        <!-- ELEMENTARY -->
-        <div class="education-item">
-
-            <div class="education-icon">🎓</div>
-
-            <div class="education-info">
-                <h3>Elementary Education</h3>
-
-                <p class="school">
-                    San Miguel Elementary School
-                </p>
-
-                <p class="year">
-                    Grade 6 • Graduate
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-        <!-- SKILLS -->
-        <section id="skills" class="section">
-
-            <div class="section-title">
-                <p>WHAT I KNOW</p>
-                <h2>Skills</h2>
-            </div>
-
-
-            <div class="skills-grid">
-
-                <div class="skill-card">
-                    <h3>HTML</h3>
-                    <p>Creating structured webpages.</p>
+        <section class="section section-dark" id="about">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">01 / PROFILE</p>
+                    <h2>About <span>Me</span></h2>
+                    <p class="section-lead">A technology student focused on steady growth, useful systems, and clear digital experiences.</p>
                 </div>
 
-                <div class="skill-card">
-                    <h3>CSS</h3>
-                    <p>Designing responsive web interfaces.</p>
+                <div class="about-grid">
+                    <article class="about-panel reveal">
+                        <p class="large-copy">
+                            I am a Bachelor of Science in Information Technology student at Davao del Norte State College. I enjoy working with web technologies, software projects, visual content, and new tools that help me become a more capable IT professional.
+                        </p>
+                        <p>
+                            My goal is to apply what I learn to real problems, improve through hands-on projects, and contribute to teams through technical work, analysis, documentation, and continuous learning.
+                        </p>
+                    </article>
+
+                    <aside class="info-panel reveal" aria-label="Basic information">
+                        <div class="info-row"><span>Location</span><strong>Davao del Norte, Philippines</strong></div>
+                        <div class="info-row"><span>Email</span><strong><a href="mailto:jimenez.louiejay@dnsc.edu.ph">jimenez.louiejay@dnsc.edu.ph</a></strong></div>
+                        <div class="info-row"><span>Program</span><strong>BS Information Technology</strong></div>
+                        <div class="info-row"><span>Year Level</span><strong>4th Year • Undergraduate</strong></div>
+                        <div class="info-row"><span>Interests</span><strong>Web Development • Software • UI/UX • Multimedia</strong></div>
+                    </aside>
                 </div>
 
-                <div class="skill-card">
-                    <h3>JavaScript</h3>
-                    <p>Adding basic website interactions.</p>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Git</h3>
-                    <p>Tracking project changes.</p>
-                </div>
-
-                <div class="skill-card">
-                    <h3>GitHub</h3>
-                    <p>Managing and publishing repositories.</p>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Web Development</h3>
-                    <p>Building simple responsive websites.</p>
-                </div>
-
-                 <div class="skill-card">
-                    <h3>Video/Photo Editing</h3>
-                    <p>Editing Videos/Photos alike.</p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- CONTACT -->
-        <section id="contact" class="section">
-
-            <div class="section-title">
-                <p>GET IN TOUCH</p>
-                <h2>Contact Me</h2>
-            </div>
-
-
-            <div class="contact-card">
-
-                <div class="contact-item">
-
-                    <span>✉</span>
-
+                <div class="objective-card reveal">
                     <div>
-                        <small>Email</small>
-                        <p>jimenez.louiejay@dnsc.edu.ph</p>
+                        <p class="mini-label">CAREER OBJECTIVE</p>
+                        <h3>Grow into a dependable IT professional who creates practical, user-focused solutions.</h3>
                     </div>
-
+                    <p>I aim to deepen my development, systems, and collaboration skills while gaining experience through academic and professional opportunities.</p>
                 </div>
-
-
-                <div class="contact-item">
-
-                    <span>⌘</span>
-
-                    <div>
-                        <small>GitHub</small>
-                        <p>https://github.com/jimenezlouiejay-lab</p>
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <span>⌖</span>
-
-                    <div>
-                        <small>Location</small>
-                        <p>Davao del Norte, Philippines</p>
-                    </div>
-
-                </div>
-
             </div>
-
         </section>
 
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">02 / EDUCATION</p>
+                    <h2>Academic <span>Journey</span></h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-period">CURRENT</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Science in Information Technology</h3>
+                            <p class="timeline-school">Davao del Norte State College</p>
+                            <p>4th Year • Undergraduate</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-period">SENIOR HIGH</div>
+                        <div class="timeline-content">
+                            <h3>General Academic Strand</h3>
+                            <p class="timeline-school">San Miguel National High School</p>
+                            <p>Grade 12 • Graduate</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-period">ELEMENTARY</div>
+                        <div class="timeline-content">
+                            <h3>Elementary Education</h3>
+                            <p class="timeline-school">San Miguel Elementary School</p>
+                            <p>Grade 6 • Graduate</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark" id="skills">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">03 / CAPABILITIES</p>
+                    <h2>Skills & <span>Tools</span></h2>
+                    <p class="section-lead">A growing technical toolkit supported by communication, documentation, and problem-solving skills.</p>
+                </div>
+
+                <div class="skills-layout">
+                    <div class="skills-group reveal">
+                        <div class="skills-group-heading"><span>01</span><h3>Development</h3></div>
+                        <div class="skill-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Python</span><span>FastAPI</span><span>Flutter</span><span>Dart</span>
+                        </div>
+                    </div>
+                    <div class="skills-group reveal">
+                        <div class="skills-group-heading"><span>02</span><h3>Workflow & Design</h3></div>
+                        <div class="skill-tags">
+                            <span>Git</span><span>GitHub</span><span>Responsive Design</span><span>UI/UX</span><span>Web Development</span><span>Video Editing</span><span>Photo Editing</span>
+                        </div>
+                    </div>
+                    <div class="skills-group reveal">
+                        <div class="skills-group-heading"><span>03</span><h3>Professional</h3></div>
+                        <div class="skill-tags">
+                            <span>Problem Solving</span><span>Documentation</span><span>System Analysis</span><span>Communication</span><span>Teamwork</span><span>Continuous Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-heading heading-split reveal">
+                    <div>
+                        <p class="section-kicker">04 / SELECTED WORK</p>
+                        <h2>Featured <span>Projects</span></h2>
+                    </div>
+                    <a class="text-link" href="https://github.com/jimenezlouiejay-lab" target="_blank" rel="noopener noreferrer">View GitHub Profile ↗</a>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card featured reveal">
+                        <div class="project-visual project-geosustain">
+                            <div class="project-number">01</div>
+                            <div class="visual-code">GEO<span>+</span></div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>CAPSTONE</span><span>Mobile + Web</span></div>
+                            <h3>GeoSustain</h3>
+                            <p>AI-driven geospatial decision-support system for sustainable landscape management in Panabo City, combining farm analysis, environmental data, crop recommendations, explainable outputs, and reporting.</p>
+                            <div class="project-tags"><span>Flutter</span><span>FastAPI</span><span>Python</span><span>PostgreSQL / Supabase</span><span>Machine Learning</span></div>
+                            <a class="project-link" href="https://github.com/jaxdeeznutz/geosustain_proj" target="_blank" rel="noopener noreferrer">Repository <span>↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-visual project-secure">
+                            <div class="project-number">02</div>
+                            <div class="visual-code">AUTH<span>_</span></div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>WEB SYSTEM</span><span>Security</span></div>
+                            <h3>Secure Registration & Login System</h3>
+                            <p>A secure authentication project centered on registration, login, password validation, database integration, and account protection practices.</p>
+                            <div class="project-tags"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-visual project-book">
+                            <div class="project-number">03</div>
+                            <div class="visual-code">BOOK<span>/</span></div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>WEB APP</span><span>Reading</span></div>
+                            <h3>BookHaven</h3>
+                            <p>A digital reading platform designed for browsing, searching, previewing, and organizing book-related content through a responsive interface.</p>
+                            <div class="project-tags"><span>Laravel</span><span>PHP</span><span>Blade</span><span>JavaScript</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-visual project-space">
+                            <div class="project-number">04</div>
+                            <div class="visual-code">SPACE<span>+</span></div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>PLATFORM</span><span>Concept</span></div>
+                            <h3>SpaceShare PH</h3>
+                            <p>A space-finding and rental concept focused on helping users discover practical places for parking, storage, and other short-term space needs.</p>
+                            <div class="project-tags"><span>Web Development</span><span>UI/UX</span><span>Product Concept</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-visual project-psycare">
+                            <div class="project-number">05</div>
+                            <div class="visual-code">CARE<span>.</span></div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>WEB PLATFORM</span><span>Appointments</span></div>
+                            <h3>PsyCare</h3>
+                            <p>A PHP/MySQL mental-health appointment platform with patient, psychiatrist, and administrator workflows for discovery, booking, schedule management, and appointment status updates.</p>
+                            <div class="project-tags"><span>PHP</span><span>MySQL</span><span>Web Development</span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark" id="experience">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">05 / EXPERIENCE</p>
+                    <h2>Academic & Technical <span>Experience</span></h2>
+                </div>
+
+                <div class="experience-grid">
+                    <article class="experience-card reveal">
+                        <div class="experience-topline"><span>CAPSTONE ROLE</span><span>2026</span></div>
+                        <h3>System Analyst & Documentation Specialist</h3>
+                        <h4>GeoSustain</h4>
+                        <p>Contributed to requirements analysis and project documentation, including system models, data descriptions, testing documentation, workflow consistency, and manuscript revisions.</p>
+                    </article>
+                    <article class="experience-card reveal">
+                        <div class="experience-topline"><span>TECHNICAL COURSEWORK</span><span>BSIT</span></div>
+                        <h3>Web, Git & Systems Practice</h3>
+                        <h4>Academic Activities</h4>
+                        <p>Built and tested web projects, practiced Git/GitHub collaboration and merge workflows, and completed hands-on technical activities that strengthened troubleshooting and implementation skills.</p>
+                    </article>
+                </div>
+
+                <div class="highlights reveal">
+                    <div class="highlights-title">
+                        <p class="mini-label">ACHIEVEMENTS & TECHNICAL HIGHLIGHTS</p>
+                        <h3>Learning through real project work.</h3>
+                    </div>
+                    <div class="highlight-list">
+                        <div><span>01</span><p>Capstone contributor for an AI-driven geospatial decision-support system.</p></div>
+                        <div><span>02</span><p>Hands-on Git and GitHub branch, merge, conflict-resolution, and collaboration practice.</p></div>
+                        <div><span>03</span><p>Cybersecurity and networking laboratory experience in controlled academic environments.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="container contact-wrap">
+                <div class="contact-copy reveal">
+                    <p class="section-kicker">06 / CONTACT</p>
+                    <h2>Let’s build something <span>useful.</span></h2>
+                    <p>For academic collaboration, project discussions, or professional opportunities, you can reach me through email or GitHub.</p>
+                </div>
+
+                <div class="contact-links reveal">
+                    <a href="mailto:jimenez.louiejay@dnsc.edu.ph" class="contact-link">
+                        <span class="contact-label">EMAIL</span>
+                        <strong>jimenez.louiejay@dnsc.edu.ph</strong>
+                        <span class="contact-arrow">↗</span>
+                    </a>
+                    <a href="https://github.com/jimenezlouiejay-lab" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <span class="contact-label">GITHUB</span>
+                        <strong>github.com/jimenezlouiejay-lab</strong>
+                        <span class="contact-arrow">↗</span>
+                    </a>
+                    <div class="contact-link static-link">
+                        <span class="contact-label">LOCATION</span>
+                        <strong>Davao del Norte, Philippines</strong>
+                        <span class="contact-arrow">•</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-
-    <!-- FOOTER -->
-    <footer>
-
-        <p>
-            © <span id="year"></span> Louie Jay
-        </p>
-
-        <p class="footer-text">
-            Personal CV Website
-        </p>
-
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand footer-brand" href="#home"><span class="brand-mark">LJ</span><span class="brand-dot">.</span></a>
+            <p>© <span id="year"></span> Louie Jay Y. Jimenez. Personal CV Portfolio.</p>
+            <a href="#home" class="back-top">Back to top ↑</a>
+        </div>
     </footer>
 
+    <button class="floating-top" id="floatingTop" aria-label="Back to top">↑</button>
 
     <script src="script.js"></script>
-
 </body>
-
 </html>
